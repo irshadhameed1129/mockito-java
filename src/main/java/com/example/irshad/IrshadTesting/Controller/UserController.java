@@ -20,10 +20,10 @@ public class UserController {
     @CrossOrigin(origins= "http://localhost:3000")
     @GetMapping( "/userlist")
     public List<User> fetchProductList () {
-        List<User> products= new ArrayList<User>();
+        List<User> user= new ArrayList<User>();
         //fetch data from database;
-        products = userProfileServices.fetchUserList();
-        return products;
+        user = userProfileServices.fetchUserList();
+        return user;
     }
 
 
